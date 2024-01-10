@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+    margin: 0;
+}
+
+#app {
+    font-family: "Kanit", sans-serif;
+    background-color: #1d1d1d;
+    color: #e4e4e4;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.timers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.timers-container > .one-timer-container {
+    font-weight: 400; 
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #8a8a8a; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px 0;
+}
+
+.timers-container > .one-timer-container > .timer-parts.hide {
+    color: #383838;
+}
+
+.timers-container > .one-timer-container > h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.timers-container > .one-timer-container > .timer-parts {
+    display: flex;
+    align-items: end;
+    gap: 0 14px;
+    position: relative;
+}
+
+.timers-container > .one-timer-container > .timer-parts > p {
+    margin: 0;
+    width: 60px;
+    line-height: 45px;
+    text-align: right;
+    z-index: 3;
+}
+
+.timers-container > .one-timer-container > .timer-parts > span {
+    width: 110px;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 3;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide) > .progress-bar {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).year > .progress-bar {
+    background-color: #4b6a3e;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).month > .progress-bar {
+    background-color: #7eba63;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).day > .progress-bar {
+    background-color: #94ca94;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).hour > .progress-bar {
+    background-color: #9bc7c5;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).minute > .progress-bar {
+    background-color: #9ec4e8;
+}
+
+.timers-container > .one-timer-container > .timer-parts:not(.hide).second > .progress-bar {
+    background-color: #a9c1d9;
+}

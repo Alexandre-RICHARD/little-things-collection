@@ -1,0 +1,13 @@
+.IMG {
+    animation: 10s linear infinite blur;
+    /* filter: blur(1000); */
+}
+
+@keyframes blur {
+    from {
+        filter: blur(100px);
+    }
+    to {
+        filter: blur(0px);
+    }
+  }

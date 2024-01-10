@@ -1,0 +1,36 @@
+a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 11px 0 0 9px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,40,60,.2);
+  }
+  span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: rgb(0,40,60);
+    transition: 700ms;
+    pointer-events: none;
+  }
+  span:nth-child(2) {
+    margin: 3px 0;
+  }
+  .open {
+    border-color: #ffffff33;
+  }
+  .open :first-child {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  .open :nth-child(2) {
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  .open :last-child {
+    transform: translateY(-5px) rotate(-135deg);
+  }
