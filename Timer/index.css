@@ -21,11 +21,11 @@
 }
 
 .timers-container > .one-timer-container {
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 45px;
     padding: 10px;
     border-radius: 8px;
-    border: 2px solid #8a8a8a; 
+    border: 2px solid #8a8a8a;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
