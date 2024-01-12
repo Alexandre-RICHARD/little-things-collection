@@ -190,8 +190,8 @@ const handleTimer = (dateCollection) => {
 
 const dateCollection = [
   {
-    name: "Sain",
-    date: "2023-12-22T01:37:00"
+    name: "Test",
+    date: "2024-01-12T10:04:30"
   },
   {
     name: "GTA VI",
